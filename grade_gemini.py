@@ -1,124 +1,92 @@
-import glob, os, json
+import glob, os, json, re
 import numpy as np
-from google import genai
-import re
 
-"""
-load_prompts 
------------------------------
-Loads different prompts we are verifying, assuming 
-each prompt is stored in a separate text file in 
-the prompts/ folder
-"""
+from google import genai
+import openai
+
 def load_prompts(dir="prompts"):
     paths = sorted(glob.glob(os.path.join(dir, "*.txt")))
-    templates = []
-    for p in paths:
-        with open(p, encoding="utf-8") as f:
-            templates.append(f.read())
-    return templates
+    return [open(p, encoding="utf-8").read() for p in paths]
 
-
-"""
-load_essays
-----------------------------
-Loads all the essays from the JSON file to evaluate 
-the given prompts against them 
-"""
 def load_essays(path="essays.json"):
-    with open(path) as f:
-        return json.load(f)
+    return json.load(open(path))
 
 def _extract_json_block(text: str) -> str:
-    """
-    Pulls out the first JSON object in `text`, handling:
-      - ```json … ```
-      - ``` … ```
-      - inline `…`
-      - plain text with extra commentary
-    """
-    # 1) code-fence with optional "json" tag
     m = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.DOTALL)
-    if m:
-        return m.group(1)
-    # 2) inline fence of 1–3 backticks
+    if m: return m.group(1)
     m = re.search(r"`{1,3}\s*(\{.*?\})\s*`{1,3}", text, re.DOTALL)
-    if m:
-        return m.group(1)
-    # 3) fallback: grab from first "{" to last "}"
-    start = text.find("{")
-    end   = text.rfind("}")
-    if start != -1 and end != -1 and end > start:
-        return text[start:end+1]
-    # 4) nothing found—return as-is
+    if m: return m.group(1)
+    start, end = text.find("{"), text.rfind("}")
+    if 0 <= start < end: return text[start:end+1]
     return text
 
-"""
-grade_essay 
------------------------------------
-Grades an essay with a given prompt template
-"""
-def grade_essay(template, question, essay):
+def grade_gemini(template, question, essay):
     prompt = template.replace("{question}", question).replace("{essay}", essay)
-
-    # obtain the model's response from the essay 
     resp = genai.Client().models.generate_content(
-        model = 'gemini-2.0-flash',
+        model="gemini-2.0-flash",
         contents=prompt
     )
-    content = _extract_json_block(resp.text)
+    block = _extract_json_block(resp.text)
     try:
-        # load the string as a object 
-        llm_grade = json.loads(content)
-        print(f"Essay:\n {essay}")
-        print("=========================== Gemini Score =============================== ")
-        print(f"Thesis: {llm_grade["thesis"]["score"]}, Evidence/Commentary: {llm_grade["evidenceCommentary"]["score"]}, "
-              f"Sophistication: {llm_grade["sophistication"]["score"]}")
-        return llm_grade
+        return json.loads(block)
     except json.JSONDecodeError:
-        print("⚠️  JSON parse error for response:\n", content)
+        print("⚠️ Gemini JSON parse error:", block)
         return None
 
-""" 
-  Given the predicted metrics, and the true grades given by the graders
-  we evaluate the following metrics: 
-  1. Accuracy (how often in each category the LLM predicts correctly)
-  2. Mean difference (average of G_LLM - G_Human)
-  3. Mean Squared Error (average of (G_LLM - G_Human)^2 )
-"""
-def compute_metrics(preds, trues):
-    cats = ["thesis", "evidenceCommentary", "sophistication"]
+def grade_o4mini(template, question, essay):
+    openai.api_key = os.getenv("OPENAI_API_KEY")
+    prompt = template.replace("{question}", question).replace("{essay}", essay)
+    # wrap into a system/user ChatCompletion if desired, here as single user turn:
+    resp = openai.ChatCompletion.create(
+        model="gpt-4.5-preview",
+        messages=[{"role":"user","content":prompt}],
+    )
+    text = resp.choices[0].message.content
+    block = _extract_json_block(text)
+    try:
+        return json.loads(block)
+    except json.JSONDecodeError:
+        print("⚠️ o4‑mini JSON parse error:", block)
+        return None
+
+def compute_metrics(preds, trues, label):
+    cats = ["thesis","evidenceCommentary","sophistication"]
+    print(f"\nMetrics for {label}:")
     for cat in cats:
         p = np.array([x[cat]["score"] for x in preds])
         t = np.array([x[cat]        for x in trues])
-        acc = np.mean(p == t)
-        md  = np.mean(p - t)
-        mse = np.mean((p - t)**2)
-        print(f"{cat:20s} | accuracy: {acc:.2f} | mean diff (+ve -> lenient): {md:.2f} | MSE: {mse:.2f}")
+        print(f"{cat:20s} | acc {np.mean(p==t):.2f} | mean diff {np.mean(p-t):.2f} | MSE {np.mean((p-t)**2):.2f}")
 
 def main():
-    # 1. configure API key
-    api_key = os.getenv("GOOGLE_API_KEY")
-    if not api_key:
-        raise RuntimeError("Set GOOGLE_API_KEY in your environment")
+    if not os.getenv("GOOGLE_API_KEY"):
+        raise RuntimeError("Set GOOGLE_API_KEY")
+    if not os.getenv("OPENAI_API_KEY"):
+        raise RuntimeError("Set OPENAI_API_KEY")
 
-    # 2. load prompts & essays
     templates = load_prompts("prompts")
     essays    = load_essays("essays.json")
 
-    # 3. for each template, grade all essays & report metrics
-    for num, tmpl in enumerate(templates):
+    for idx, tmpl in enumerate(templates):
         print("\n" + "="*60)
-        print("Evaluating Prompt template:", num)
-        preds, trues = [], []
+        print(f"Template {idx}")
+        gem_preds, gem_trues = [], []
+        o4_preds,  o4_trues  = [], []
+
         for entry in essays:
-            out = grade_essay(tmpl, entry["question"], entry["essay"])
-            if out:
-                preds.append(out)
-                trues.append(entry["human_scores"])
-                print("=========================== Human Scores ===============================")
-                print(entry["human_scores"])
-        compute_metrics(preds, trues)
+            gem = grade_gemini(tmpl, entry["question"], entry["essay"])
+            o4  = grade_o4mini(tmpl, entry["question"], entry["essay"])
+            if gem and o4:
+                print("\n--- Essay ---\n", entry["essay"])
+                print("Gemini:", gem["thesis"]["score"], gem["evidenceCommentary"]["score"], gem["sophistication"]["score"])
+                print("gpt-4.5-preview:", o4["thesis"]["score"], o4["evidenceCommentary"]["score"], o4["sophistication"]["score"])
+                print("Human:  ", entry["human_scores"])
+                gem_preds.append(gem)
+                gem_trues.append(entry["human_scores"])
+                o4_preds.append(o4)
+                o4_trues.append(entry["human_scores"])
+
+        compute_metrics(gem_preds, gem_trues, label="Gemini")
+        compute_metrics(o4_preds,  o4_trues,  label="gpt-4.5-preview")
 
 if __name__ == "__main__":
     main()

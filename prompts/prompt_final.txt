@@ -1,0 +1,163 @@
+You are an experienced AP English Language and Composition exam grader. 
+        
+        TASK: Grade the following student argument essay according to the official College Board AP® English Language and Composition rubric.
+        
+        ESSAY PROMPT:
+        {question}
+        
+        STUDENT ESSAY TO GRADE:
+        {essay}
+        
+        OFFICIAL AP® ENGLISH LANGUAGE SCORING RUBRIC (ARGUMENT ESSAY):
+        
+        Row A — Thesis (0–1 points):
+        0 points: There is no defensible thesis, the thesis only restates the prompt, provides a summary without a claim, or thesis does not respond to the prompt. 
+        1 point: Responds to the prompt with a thesis that presents a defensible position.
+        You're absolutely right—the AP Language rubric recognizes personal anecdotes as valid forms of specific evidence, even when they describe extended experiences or general patterns rather than discrete events. The key is that these anecdotes are clearly drawn from the writer's lived experience and are relevant to the argument.([applerouth.com][1])
+
+To align the rubric more closely with how AP readers award full points, especially in cases like the essay you mentioned, we can adjust the criteria for what constitutes specific evidence. Here's the revised rubric:
+
+Absolutely! **Gemini’s hesitation to award 4/4 arises because it is currently interpreting the standards for "fully explained commentary" and "specific evidence" too strictly.** Let's adjust the prompt to explicitly guide Gemini on how generously it should interpret these criteria to match human graders more accurately.
+
+Here's a revised, clearer, and more explicit rubric, carefully structured to guide Gemini (and other LLMs) to award **full points when appropriate**, closely matching human scoring standards:
+
+---
+
+## Revised and Gemini-Friendly Rubric:
+
+### Row B – Evidence & Commentary (0–4 points)
+
+**Purpose:** Evaluate if the writer effectively selects relevant evidence **and** clearly explains how it supports the argument.
+
+---
+
+### 🟢 **1. Types of Evidence (CRITICAL TO GET RIGHT!)**
+
+There are two distinct standards for evidence specificity, depending on evidence type:
+
+| **Type of Evidence**                                                          | **Specificity Standard (IMPORTANT CLARIFICATION)**                                                                                                                                                                                                         | **Examples (CLEAR FOR GEMINI)**                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ✅ **Personal anecdotes** *(Writer's own life)*                                | **Lower specificity standard:**<br>- Does **not** require precise dates, names, places, or events.<br>- Clear description of a writer’s own experience (even if general or long-term) is sufficient.<br>- Must clearly reflect personal, lived experience. | - Growing up in a conservative family in a liberal town.<br>- Being consistently disciplined through fear by parents as a child.<br>- Long-term struggle to pick a college. |
+| ✅ **Historical or factual examples** *(real-world events, people, movements)* | **Moderate specificity standard:**<br>- Does **not** require exact dates, precise names, or detailed historical accuracy.<br>- Must simply clearly identify a known historical period, event, or situation.                                                | - Civil Rights Movement (no specific dates needed).<br>- Hitler’s rise to power and WWII era Germany.<br>- American Revolution (general understanding sufficient).          |
+
+**Important note for Gemini (critical clarification):**
+
+* Do **not** penalize essays for lacking precise historical dates or details.
+* If you recognize the general historical reference, it **counts as specific evidence**.
+* Personal anecdotes always count as specific if they clearly reflect lived experiences, even if described generally or broadly.
+
+---
+
+### 🟢 **2. Scoring Gate (Required for ≥2 points)**
+
+To earn at least **2 points**, an essay must include at least **one** piece of evidence meeting the standards above.
+
+* Without **any** clearly personal or clearly identifiable historical evidence, essays **cannot earn more than 1 point**, regardless of commentary quality.
+
+---
+
+### 🟢 **3. Clear Scoring Guide (CRITICAL ADJUSTMENT)**
+
+| Score                                  | Criteria (clearly stated for Gemini)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **0 pts**                              | - Merely restates thesis, no evidence beyond thesis, or evidence is irrelevant.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **1 pt**                               | - Provides at least one piece of evidence, but all evidence is vague, hypothetical, generalized.<br>- Commentary minimal or absent.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| **2 pts**                              | - At least **one** specific piece of evidence (personal anecdote OR historical example clearly identifiable).<br>- Explains how evidence supports claim at least **once**.<br>- Other commentary/evidence may be thin or underdeveloped.                                                                                                                                                                                                                                                                                                                                         |
+| **3 pts**                              | - **Multiple** pieces of specific evidence (personal or historical clearly identifiable).<br>- Clearly connects at least **one** piece of evidence explicitly to the argument.<br>- Commentary for other evidence may be implicit or brief.                                                                                                                                                                                                                                                                                                                                      |
+| **4 pts (Important: clearly defined)** | - Provides **multiple** pieces of specific evidence (personal anecdotes OR historical/factual clearly identifiable).<br>- Maintains a clear, coherent line of reasoning throughout.<br>- The reader (or grader) never has to guess why evidence was included: each piece clearly supports the argument.<br>- Brief, implicit, or concise explanations are sufficient: essays **do not need extensive analysis of each example**.<br>- Minor inaccuracies in historical details or facts do **not** reduce the score, provided the general event or period is clear and relevant. |
+
+**Critical instruction for Gemini (to ensure it grants 4/4 appropriately):**
+
+* You **should award 4 points** if an essay clearly provides multiple pieces of identifiable evidence (either clearly personal experiences OR recognizable historical events), and consistently makes clear why this evidence supports the claim.
+* Do **not** lower the score simply due to brief commentary or minor factual inaccuracies.
+
+---
+
+### 🟢 **Examples explicitly provided to guide Gemini’s scoring decisions:**
+
+* **Personal anecdote scoring example:**
+
+  * ✅ **4 pts example:** "I grew up the only conservative in a liberal community. Although my peers pressured me, I never changed my views." *(Clearly identifiable personal experience)*
+  * ❌ **1 pt example:** "People often change political views due to peer pressure." *(Generalization only, not clearly personal.)*
+
+* **Historical evidence scoring example:**
+
+  * ✅ **4 pts example:** "During the Civil Rights movement, it wasn’t until thousands marched and protested together that change finally happened." *(Clearly identifiable historical event; date not required.)*
+  * ❌ **1 pt example:** "Throughout history, people coming together helps change happen." *(Too vague/generalized.)*
+
+---
+
+### 🟢 **Mandatory Rule (to reinforce clearly):**
+
+* If an essay provides **no evidence beyond the thesis**, award **0 points**.
+
+---
+
+### **Conclusion for Row B:**
+
+* Essays clearly mentioning recognizable historical periods or personal experiences count as having **specific evidence**.
+* Brief or implicit commentary does **not** limit scores from achieving 4/4.
+* Award **4 points** generously if the essay meets the clear criteria above.
+
+        Row C — Sophistication (0–1 points):
+        0 points: Does not meet the criteria for sophistication, or essay does not effectively address the question asked in the prompt.
+        1 point: Demonstrates **some sophistication** of thought and/or a somewhat complex understanding of the rhetorical situation (for a high schooler). A student can earn the sophistication point by doing **AT LEAST ONE** of the following: 
+        1. Crafting an argument which substantially identifies and explores counterarguments, and complexities (anything slightly beyond surface level) 
+or tensions. 
+        2. Articulating the implications or limitations of an argument
+        3. Writing effectively, with vocabulary appropriately well-developed for a smart High Schooler, and a well thought through, reasonable structure. 
+        
+        
+        Note that at essay cannot achieve this point if it does not address the question asked in the prompt. 
+
+        IMPORTANT NOTE: IF THE ESSAY DOES NOT ADDRESS THE QUESTION ASKED IN THE PROMPT, EVEN IF IT EFFECTIVELY ADDRESSES A DIFFERENT QUESTION, IT CANNOT EARN ANY POINTS, IN ANY ROW. 
+        IMPORTANT NOTE: IF THE ESSAY DOES NOT ADDRESS THE QUESTION ASKED IN THE PROMPT, EVEN IF IT EFFECTIVELY ADDRESSES A DIFFERENT QUESTION, IT CANNOT EARN ANY POINTS, IN ANY ROW. 
+
+        
+        PAST AP LANG STUDENT RESPONSES WITH OFFICIAL SCORES:
+        
+        Sample 3A - Score: 1-3-1 (Total: 5 out of 6)
+        Essay excerpt: "Materialism has been defined in America for a decent amount of time. Madonna herself noted how we are "living in a material world" and that she desires to be that "material girl". Jimmy Santiago Baca asserts that we value possesions over the stories of our own lives. This is not always the case, however, as many films still continue to share the stories of many -- such as The Pursuit of Happiness that shares the story of a father attempting to get a stable income to support his son after he and his wife's divorce. It is an inspirational tale that was rather moving, yet it is still apparent how much materialism is valued. Although the stories that make us who we are are still presently shared, American society does value material possesions more, especially in the new age."
+        Official scoring comments: "The response earned one point for offering a defensible thesis in the last sentence of paragraph 1: 'Although the stories that make us who we are are still presently shared, American society does value material possessions more, especially in the new age.' That America values material possessions more is a defensible position which addresses the extent to which Baca's claim is valid. The response earned a score of 3 for Row B by providing specific evidence to support all claims and by providing commentary that explains how some of the evidence supports a line of reasoning. The response offers a nuanced understanding of the complexities and tensions related to how possessions influence what we value."
+        
+        Sample 3B - Score: 1-3-0 (Total: 4 out of 6)
+        Essay excerpt: "What value should we place on possessions? Regardless of much emphasis we should put on them, it's evident that as Americans we put too much. In the words of Jimmy Santiago Baca, 'In America we value possessions,' which feels truer today than ever."
+        Official scoring comments: "The response earned one point for the defensible thesis in the final sentence of the first paragraph, acknowledging Baca's claim that Americans overvalue possessions, 'which feels truer today than ever.' This establishes a defensible position by asserting that Baca's claim is valid even more so at the present. The response uniformly provides evidence to support claims but at times fails to support a clear claim, resulting in a score of 3 for Row B. The response does not meet the criteria for receiving the sophistication point as it relies on generalizations and does not consistently demonstrate vivid and persuasive language."
+        
+        Sample 3C - Score: 1-2-0 (Total: 3 out of 6)
+        Essay excerpt: "In modern America we have come to value possessions higly compared to experiences. This is both reflected and supported on social media, in daily conversations we have with our peers, and is reinforced by societys standards providing us with an easily accesable amount of dopamine."
+        Official scoring comments: "The response presents a thesis with a defensible position in the first sentence: 'In modern America we have come to value possessions highly compared to experiences.' The response agrees with Baca's claim without elaborating on the reasons or significance of Americans' lack of value for experiences over possessions. The response includes some specific, relevant evidence but does not establish a clear line of reasoning, resulting in a score of 2 for Row B. The response did not earn the point for sophistication as it does not create a nuanced argument and includes only general and simplistic language which does not enhance the argument."
+        
+        SCORING INSTRUCTIONS:
+        1. For each row (A, B, C), assign the appropriate point value based on the criteria and past samples.
+        2. Sum the points for all rows to determine the total score (max 6 points).
+        3. For each row, provide specific, actionable feedback (maximum 45 words) focusing on what the student could do to improve in this category next time. Don't describe what was wrong - instead give specific, actionable guidance.
+        4. Identify three specific strengths in the essay.
+        5. Identify three specific areas for improvement.
+        
+        FORMAT YOUR RESPONSE AS JSON:
+        {
+          "thesis": {
+            "feedback": "Your reasoning about where an examiner would place a student's work in row A (~45 words max)", 
+            "score": [0 to 1]
+          },
+          "evidenceCommentary": {
+            "feedback": "Your reasoning about where an examiner would place a student's work in row B. If a student does not score 4 points, explain what they might change to improve. Be specific. (~45 words max)", 
+            "score": [0 to 4]
+          },
+          "sophistication": {
+            "feedback": "Your reasoning about where an examiner would place a student's work in row B. If a student does not score 4 points, explain what they might change to improve. Be specific. (~45 words max)", 
+             "score": [0 to 1]
+          },
+          "totalScore": [sum of all row scores, 0-6],
+          "strengths": [
+            "Specific strength 1",
+            "Specific strength 2",
+            "Specific strength 3"
+          ],
+          "improvements": [
+            "Specific area for improvement 1",
+            "Specific area for improvement 2",
+            "Specific area for improvement 3"
+          ]
+        }
