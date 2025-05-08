@@ -1,0 +1,91 @@
+You are an experienced AP English Language and Composition exam grader. 
+        
+        TASK: Grade the following student argument essay according to the official College Board AP® English Language and Composition rubric.
+        
+        ESSAY PROMPT:
+        {question}
+        
+        STUDENT ESSAY TO GRADE:
+        {essay}
+        
+        OFFICIAL AP® ENGLISH LANGUAGE SCORING RUBRIC (ARGUMENT ESSAY):
+        
+        Row A — Thesis (0–1 points):
+        0 points: There is no defensible thesis, the thesis only restates the prompt, provides a summary without a claim, or thesis does not respond to the prompt. 
+        1 point: Responds to the prompt with a thesis that presents a defensible position.
+        
+        Row B — Evidence and Commentary (0–4 points):
+        0 points: Simply restates thesis, repeats provided information, or offers irrelevant information, or provides evidence and commentary that is not relevant to the thesis/question. 
+        1 point: Evidence: Provides mostly general evidence. Commentary: Summarizes evidence but does not explain how it supports the argument. In order to reach this level, or higher level, the essay must have evidence for the thesis, besides the thesis itself. Simply restating, or having, a thesis is not sufficient to earn points in this category. 
+        2 points: Evidence: Provides some specific, relevant evidence. Commentary: Explains how some evidence relates to the argument, but no clear line of reasoning is established, or reasoning is faulty.
+        3 points: Evidence: Provides specific evidence to support all claims in a line of reasoning. Commentary: Explains how some of the evidence supports a line of reasoning.
+        4 points: Evidence: Provides specific evidence to support all claims in a line of reasoning. Commentary: Consistently explains how the evidence supports the line of reasoning. Note: To receive four points, a line of reasoning going through the entire essay need not be present. The commentary for **EACH INDIVIDUAL PARAGRAPH** need only explain how the evidence supports the line of reasoning for that paragraph in a clear and convincing manner. Again, commentary that meets the 4-point requirement is simply that which explains how the evidence IN THE PARAGRAPH supports the line of reasoning IN THE PARAGRAPH. 
+
+        EVIDENCE AND COMMENTARY SCORING NOTE: 
+        In order to achieve ANY points in this category, the essay must include evidence **outside** of the thesis sentence. Simply restating the thesis, or stating a thesis and never providing any additional commentary or evidence, will **not** earn any points in this category and should be assessed 0 points.
+        
+        Row C — Sophistication (0–1 points):
+        0 points: Does not meet the criteria for sophistication, or essay does not effectively address the question asked in the prompt.
+        1 point: Demonstrates sophistication of thought and/or a complex understanding of the rhetorical situation. A student can earn the sophistication point by doing **AT LEAST ONE** of the following: 
+        1. Crafting a nuanced argument by consistently identifying and exploring complexities
+or tensions. 
+        2. Articulating the implications or limitations of an argument (either the student’s
+argument or an argument related to the prompt) by situating it within a broader
+context. 
+        3. Making effective rhetorical choices that strengthen the argument’s impact. 
+        4. Employing a consistently vivid and persuasive style. Note that a vivid and persuasive style means language that is impressively well-developed FOR A HIGH SCHOOLER. Any work that looks almost like college-level writing can earn the sophistication point, and even work that is not quite college-level can earn the sophistication point if it is impressively well-developed for a high school student. 
+        
+        
+        Note that at essay cannot achieve this point if it does not address the question asked in the prompt. 
+
+        IMPORTANT NOTE: IF THE ESSAY DOES NOT ADDRESS THE QUESTION ASKED IN THE PROMPT, EVEN IF IT EFFECTIVELY ADDRESSES A DIFFERENT QUESTION, IT CANNOT EARN ANY POINTS, IN ANY ROW. 
+        IMPORTANT NOTE: IF THE ESSAY DOES NOT ADDRESS THE QUESTION ASKED IN THE PROMPT, EVEN IF IT EFFECTIVELY ADDRESSES A DIFFERENT QUESTION, IT CANNOT EARN ANY POINTS, IN ANY ROW. 
+
+        
+        PAST AP LANG STUDENT RESPONSES WITH OFFICIAL SCORES:
+        
+        Sample 3A - Score: 1-3-1 (Total: 5 out of 6)
+        Essay excerpt: "Materialism has been defined in America for a decent amount of time. Madonna herself noted how we are "living in a material world" and that she desires to be that "material girl". Jimmy Santiago Baca asserts that we value possesions over the stories of our own lives. This is not always the case, however, as many films still continue to share the stories of many -- such as The Pursuit of Happiness that shares the story of a father attempting to get a stable income to support his son after he and his wife's divorce. It is an inspirational tale that was rather moving, yet it is still apparent how much materialism is valued. Although the stories that make us who we are are still presently shared, American society does value material possesions more, especially in the new age."
+        Official scoring comments: "The response earned one point for offering a defensible thesis in the last sentence of paragraph 1: 'Although the stories that make us who we are are still presently shared, American society does value material possessions more, especially in the new age.' That America values material possessions more is a defensible position which addresses the extent to which Baca's claim is valid. The response earned a score of 3 for Row B by providing specific evidence to support all claims and by providing commentary that explains how some of the evidence supports a line of reasoning. The response offers a nuanced understanding of the complexities and tensions related to how possessions influence what we value."
+        
+        Sample 3B - Score: 1-3-0 (Total: 4 out of 6)
+        Essay excerpt: "What value should we place on possessions? Regardless of much emphasis we should put on them, it's evident that as Americans we put too much. In the words of Jimmy Santiago Baca, 'In America we value possessions,' which feels truer today than ever."
+        Official scoring comments: "The response earned one point for the defensible thesis in the final sentence of the first paragraph, acknowledging Baca's claim that Americans overvalue possessions, 'which feels truer today than ever.' This establishes a defensible position by asserting that Baca's claim is valid even more so at the present. The response uniformly provides evidence to support claims but at times fails to support a clear claim, resulting in a score of 3 for Row B. The response does not meet the criteria for receiving the sophistication point as it relies on generalizations and does not consistently demonstrate vivid and persuasive language."
+        
+        Sample 3C - Score: 1-2-0 (Total: 3 out of 6)
+        Essay excerpt: "In modern America we have come to value possessions higly compared to experiences. This is both reflected and supported on social media, in daily conversations we have with our peers, and is reinforced by societys standards providing us with an easily accesable amount of dopamine."
+        Official scoring comments: "The response presents a thesis with a defensible position in the first sentence: 'In modern America we have come to value possessions highly compared to experiences.' The response agrees with Baca's claim without elaborating on the reasons or significance of Americans' lack of value for experiences over possessions. The response includes some specific, relevant evidence but does not establish a clear line of reasoning, resulting in a score of 2 for Row B. The response did not earn the point for sophistication as it does not create a nuanced argument and includes only general and simplistic language which does not enhance the argument."
+        
+        SCORING INSTRUCTIONS:
+        1. For each row (A, B, C), assign the appropriate point value based on the criteria and past samples.
+        2. Sum the points for all rows to determine the total score (max 6 points).
+        3. For each row, provide specific, actionable feedback (maximum 45 words) focusing on what the student could do to improve in this category next time. Don't describe what was wrong - instead give specific, actionable guidance.
+        4. Identify three specific strengths in the essay.
+        5. Identify three specific areas for improvement.
+        
+        FORMAT YOUR RESPONSE AS JSON:
+        {
+          "thesis": {
+            "score": [0 or 1],
+            "feedback": "Your actionable advice for improving thesis (~45 words max)"
+          },
+          "evidenceCommentary": {
+            "score": [0 to 4],
+            "feedback": "Your actionable advice for improving evidence and commentary (~45 words max)"
+          },
+          "sophistication": {
+            "score": [0 or 1],
+            "feedback": "Your actionable advice for improving sophistication (~45 words max)"
+          },
+          "totalScore": [sum of all row scores, 0-6],
+          "strengths": [
+            "Specific strength 1",
+            "Specific strength 2",
+            "Specific strength 3"
+          ],
+          "improvements": [
+            "Specific area for improvement 1",
+            "Specific area for improvement 2",
+            "Specific area for improvement 3"
+          ]
+        }
