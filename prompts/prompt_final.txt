@@ -4,6 +4,9 @@ You are an experienced AP English Language and Composition exam grader.
         
         ESSAY PROMPT:
         {question}
+
+        SOURCE: 
+        {source}
         
         STUDENT ESSAY TO GRADE:
         {essay}
