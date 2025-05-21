@@ -1,13 +1,13 @@
 [
     {
-      "reading_audio": "audio/student1_reading.mp3",
+      "reading_audio": "data/audio/student1_reading.mp3",
       "passage": "Hello everyone! I'm here today because our beloved school garden is in trouble. The recent heavy rains have caused some serious damage, and without our help, it might not recover. We all know how much joy and colour the garden brings to our school, a little oasis of calm amidst the daily hustle and bustle. Think about it: the buzzing bees, the vibrant flowers, and the juicy tomatoes we harvested last year! Remember Mrs. Tan's science lessons held right there, amongst the fragrant herbs? We can’t let all that disappear! We need to act quickly and decisively to repair the damage and prevent further deterioration. So, I urge you to join me! Let's roll up our sleeves, grab our gardening gloves, and work together to restore our school garden to its former glory. We can replant, rebuild, and rejuvenate this special place. Who's with me? Let's show everyone what we can accomplish when we work together! Thank you!",
       "reading_human_score" : {
         "fluency": 5, 
         "expression": 5, 
         "pronunciation": 5
       },
-      "conversation_audio": "audio/student1_sbc.mp3",
+      "conversation_audio": "data/audio/student1_sbc.mp3",
       "stimulus": "A child walks around the bathroom, dripping his wet hands onto the floor leaving a puddle behind him. He looks gleeful, and is wearing a school uniform.",
       "conversation_human_score": {
         "personal_response": 4, 
@@ -18,14 +18,14 @@
       }
     }, 
     {
-      "reading_audio": "audio/student2_reading.mp3",
+      "reading_audio": "data/audio/student2_reading.mp3",
       "passage": "Hello everyone! I'm here today because our beloved school garden is in trouble. The recent heavy rains have caused some serious damage, and without our help, it might not recover. We all know how much joy and colour the garden brings to our school, a little oasis of calm amidst the daily hustle and bustle. Think about it: the buzzing bees, the vibrant flowers, and the juicy tomatoes we harvested last year! Remember Mrs. Tan's science lessons held right there, amongst the fragrant herbs? We can’t let all that disappear! We need to act quickly and decisively to repair the damage and prevent further deterioration. So, I urge you to join me! Let's roll up our sleeves, grab our gardening gloves, and work together to restore our school garden to its former glory. We can replant, rebuild, and rejuvenate this special place. Who's with me? Let's show everyone what we can accomplish when we work together! Thank you!",
       "reading_human_score" : {
         "fluency": 4, 
         "expression": 4, 
         "pronunciation": 5
       },
-      "conversation_audio": "audio/student2_sbc.mp3",
+      "conversation_audio": "data/audio/student2_sbc.mp3",
       "stimulus": "A child walks around the bathroom, dripping his wet hands onto the floor leaving a puddle behind him. He looks gleeful, and is wearing a school uniform.",
       "conversation_human_score": {
         "personal_response": 3, 
@@ -36,14 +36,14 @@
       }
     }, 
     {
-      "reading_audio": "audio/student3_reading.mp3",
+      "reading_audio": "data/audio/student3_reading.mp3",
       "passage": "Hello everyone! I'm here today because our beloved school garden is in trouble. The recent heavy rains have caused some serious damage, and without our help, it might not recover. We all know how much joy and colour the garden brings to our school, a little oasis of calm amidst the daily hustle and bustle. Think about it: the buzzing bees, the vibrant flowers, and the juicy tomatoes we harvested last year! Remember Mrs. Tan's science lessons held right there, amongst the fragrant herbs? We can’t let all that disappear! We need to act quickly and decisively to repair the damage and prevent further deterioration. So, I urge you to join me! Let's roll up our sleeves, grab our gardening gloves, and work together to restore our school garden to its former glory. We can replant, rebuild, and rejuvenate this special place. Who's with me? Let's show everyone what we can accomplish when we work together! Thank you!",
       "reading_human_score" : {
         "fluency": 3, 
         "expression": 3, 
         "pronunciation": 4
       },
-      "conversation_audio": "audio/student3_sbc.mp3",
+      "conversation_audio": "data/audio/student3_sbc.mp3",
       "stimulus": "A child walks around the bathroom, dripping his wet hands onto the floor leaving a puddle behind him. He looks gleeful, and is wearing a school uniform.",
       "conversation_human_score": {
         "personal_response": 3, 
@@ -54,14 +54,14 @@
       }
     }, 
     {
-      "reading_audio": "audio/student4_reading.mp3",
+      "reading_audio": "data/audio/student4_reading.mp3",
       "passage": "Hello everyone! I'm here today because our beloved school garden is in trouble. The recent heavy rains have caused some serious damage, and without our help, it might not recover. We all know how much joy and colour the garden brings to our school, a little oasis of calm amidst the daily hustle and bustle. Think about it: the buzzing bees, the vibrant flowers, and the juicy tomatoes we harvested last year! Remember Mrs. Tan's science lessons held right there, amongst the fragrant herbs? We can’t let all that disappear! We need to act quickly and decisively to repair the damage and prevent further deterioration. So, I urge you to join me! Let's roll up our sleeves, grab our gardening gloves, and work together to restore our school garden to its former glory. We can replant, rebuild, and rejuvenate this special place. Who's with me? Let's show everyone what we can accomplish when we work together! Thank you!",
       "reading_human_score" : {
         "fluency": 2, 
         "expression": 1, 
         "pronunciation": 3
       },
-      "conversation_audio": "audio/student4_sbc.mp3",
+      "conversation_audio": "data/audio/student4_sbc.mp3",
       "stimulus": "A child walks around the bathroom, dripping his wet hands onto the floor leaving a puddle behind him. He looks gleeful, and is wearing a school uniform.",
       "conversation_human_score": {
         "personal_response": 2, 
@@ -72,14 +72,14 @@
       }
     }, 
     {
-      "reading_audio": "audio/student5_reading.mp3",
+      "reading_audio": "data/audio/student5_reading.mp3",
       "passage": "Hello everyone! I'm here today because our beloved school garden is in trouble. The recent heavy rains have caused some serious damage, and without our help, it might not recover. We all know how much joy and colour the garden brings to our school, a little oasis of calm amidst the daily hustle and bustle. Think about it: the buzzing bees, the vibrant flowers, and the juicy tomatoes we harvested last year! Remember Mrs. Tan's science lessons held right there, amongst the fragrant herbs? We can’t let all that disappear! We need to act quickly and decisively to repair the damage and prevent further deterioration. So, I urge you to join me! Let's roll up our sleeves, grab our gardening gloves, and work together to restore our school garden to its former glory. We can replant, rebuild, and rejuvenate this special place. Who's with me? Let's show everyone what we can accomplish when we work together! Thank you!",
       "reading_human_score" : {
         "fluency": 0, 
         "expression": 0, 
         "pronunciation": 0
       },
-      "conversation_audio": "audio/student5_sbc.mp3",
+      "conversation_audio": "data/audio/student5_sbc.mp3",
       "stimulus": "A child walks around the bathroom, dripping his wet hands onto the floor leaving a puddle behind him. He looks gleeful, and is wearing a school uniform.",
       "conversation_human_score": {
         "personal_response": 1, 
