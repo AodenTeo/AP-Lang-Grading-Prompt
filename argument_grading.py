@@ -46,7 +46,7 @@ def load_prompts(dir="prompts_rhetorical"):
     paths = sorted(glob.glob(os.path.join(dir, "*.txt")))
     return [open(p, encoding="utf-8").read() for p in paths]
 
-def load_essays(path="essays_rhetorical.json"):
+def load_essays(path="data/essays_rhetorical.json"):
     """
     Load essay data including human scores from a JSON file.
     
@@ -179,7 +179,7 @@ def main():
 
     # Load prompt templates and essay data
     templates = load_prompts("prompts_rhetorical")
-    essays    = load_essays("essays_rhetorical.json")
+    essays    = load_essays("data/essays_rhetorical.json")
 
     # Evaluate each prompt template
     for idx, tmpl in enumerate(templates):
